@@ -1,0 +1,956 @@
+{
+	"info": {
+		"_postman_id": "91accc62-2f87-49b4-9290-c87bc76329bd",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38574436"
+	},
+	"item": [
+		{
+			"name": "Mantenimiento de cuentas de administrador",
+			"item": [
+				{
+					"name": "CreateAdministrator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "https://localhost:44375/api/administrators"
+					},
+					"response": [
+						{
+							"name": "CreateAdministrator",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Leopoldo\",\r\n    \"LastName\": \"Perez\",\r\n    \"Email\": \"leopoldo@gmail.com\",\r\n    \"Password\": \"VamoNacional@60\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "HomeOwnerSession",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer ca04e482-ea2a-4335-8458-3645e623e398",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Leopoldo\",\r\n    \"LastName\": \"Perez\",\r\n    \"Email\": \"leopoldo@gmail.com\",\r\n    \"Password\": \"VamoNacional@60\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "EmptyFields",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"\",\r\n    \"LastName\": \"\",\r\n    \"Email\": \"\",\r\n    \"Password\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "InvalidEmailFormat",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Leopoldo\",\r\n    \"LastName\": \"Perez\",\r\n    \"Email\": \"leopoldo@gmail\",\r\n    \"Password\": \"VamoNacional@60\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Correcto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Martin\",\r\n    \"LastName\": \"Slepian\",\r\n    \"Email\": \"martinslepian@gmail.com\",\r\n    \"Password\": \"bolsoDecano@60\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "AlreadyUsedEmail",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Javier\",\r\n    \"LastName\": \"Blanco\",\r\n    \"Email\": \"leopoldo@gmail.com\",\r\n    \"Password\": \"VamoNacional@61\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/administrators"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "CreateSessionAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"diegoaguirre1891@gmail.com\",\r\n    \"Password\": \"$Aabbbdsddccdd1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:44375/api/sessions"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAdministrator",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://localhost:44375/api/administrators/{id}"
+					},
+					"response": [
+						{
+							"name": "InvalidId",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"url": "https://localhost:44375/api/administrators/id"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "NonExistentId",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"url": "https://localhost:44375/api/administrators/2aa873a3-043b-4a4e-89fd-db72b4d16233"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "HomeOwnerSession",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer ca04e482-ea2a-4335-8458-3645e623e398",
+										"type": "text"
+									}
+								],
+								"url": "https://localhost:44375/api/administrators/2ab873a3-043b-4a4e-89fd-db72b4d16233"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Correct",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"url": "https://localhost:44375/api/administrators/2ab873a3-043b-4a4e-89fd-db72b4d16233"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CreacionCuentaHomeOwner",
+			"item": [
+				{
+					"name": "CreateHomeOwner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Carrington\",\r\n    \"LastName\": \"Valentine\",\r\n    \"Email\": \"valentine@gmail.com\",\r\n    \"Password\": \"kentuckyU24@\",\r\n    \"ProfilePicture\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFquR9KUh7TfLAhy_HwPn9L2qDwu2x30-ew&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:44375/api/homeOwners"
+					},
+					"response": []
+				},
+				{
+					"name": "CreateSessionHomeOwner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"valentine@gmail.com\",\r\n    \"Password\": \"kentuckyU24@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:44375/api/sessions"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Asociar Dispositivos al hogar",
+			"item": [
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "CreateCompanyOwner",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FirstName\": \"Kenny\",\r\n    \"LastName\": \"Clark\",\r\n    \"Email\": \"bigkenny@gmail.com\",\r\n    \"Password\": \"GoPackGo129@\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/companyOwners"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCompanyOwnerSession",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\": \"bigkenny@gmail.com\",\r\n    \"Password\": \"GoPackGo129@\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/sessions"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCompany",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"Lastril\",\r\n    \"Logo\": \"https://lastril.com.uy/images/acolchados.jpg?crc=4056530180\",\r\n    \"RUT\": 43910459\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/companies"
+							},
+							"response": [
+								{
+									"name": "WithoutAuthorization",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"Lastril\",\r\n    \"Logo\": \"https://lastril.com.uy/images/acolchados.jpg?crc=4056530180\",\r\n    \"RUT\": 43910459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "AdministratorSession",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"Lastril\",\r\n    \"Logo\": \"https://lastril.com.uy/images/acolchados.jpg?crc=4056530180\",\r\n    \"RUT\": 43910459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "EmptyFields",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"\",\r\n    \"Logo\": \"https://lastril.com.uy/images/acolchados.jpg?crc=4056530180\",\r\n    \"RUT\": 43910459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "Correct",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"Dell\",\r\n    \"Logo\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/2048px-Dell_Logo.svg.png\",\r\n    \"RUT\": 43910459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "OwnerAlreadyHasCompany",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"Asus\",\r\n    \"Logo\": \"https://press.asus.com/assets/w_767,h_431/fa3cbcd7-e826-45f9-885e-1d3470be3952/20220801101712676.jpg\",\r\n    \"RUT\": 60110459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "RepeatedField",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 11f946ec-4310-4d26-a7c0-bd2ce4fc17d6",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"Name\": \"Lastril\",\r\n    \"Logo\": \"https://lastril.com.uy/images/acolchados.jpg?crc=4056530180\",\r\n    \"RUT\": 43910459\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://localhost:44375/api/companies"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "AddDeviceTo Home",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "https://localhost:44375/api/homes/{homeid}/devices"
+					},
+					"response": [
+						{
+							"name": "Not authenticated",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DeviceId\": \"7413af5b-9111-46da-aa52-30826c2bc2ee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894/devices"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "AdminSession",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 0943f190-45f1-4ceb-9a66-d7533e686ecd",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DeviceId\": \"7413af5b-9111-46da-aa52-30826c2bc2ee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894/devices"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "IsNotMemberOfHome",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 31add303-5900-47ab-a9db-4a23d2178087",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DeviceId\": \"7413af5b-9111-46da-aa52-30826c2bc2ee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894/devices"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "ResidentWithoutPermission",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer e7f69c0b-5e26-42ce-b19c-cd9edd38af24",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DeviceId\": \"7413af5b-9111-46da-aa52-30826c2bc2ee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894/devices"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Correct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer ca04e482-ea2a-4335-8458-3645e623e398",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DeviceId\": \"7413af5b-9111-46da-aa52-30826c2bc2ee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894/devices"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "CreateHome",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ca04e482-ea2a-4335-8458-3645e623e398",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Street\": \"18 de Julio\",\r\n    \"HouseNumber\": 1576,\r\n    \"Latitude\": 32.094829,\r\n    \"Longitude\": 54.840213,\r\n    \"QuantityOfResidents\": 1,\r\n    \"QuantityOfResidentsAllowed\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:44375/api/homes"
+					},
+					"response": []
+				},
+				{
+					"name": "CreateDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "https://localhost:44375/api/devices"
+					},
+					"response": [
+						{
+							"name": "SecurityCameraMotionEnabled",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"Small camera\",\r\n    \"ModelNumber\": \"X47\",\r\n    \"Description\": \"Small camera with latest technology\",\r\n    \"MainPicture\": \"https://m.media-amazon.com/images/I/71b50IyOh4L._AC_UF894,1000_QL80_.jpg\",\r\n    \"Photographies\": [\r\n        \"https://example.com/photo1.jpg\",\r\n        \"https://example.com/photo2.jpg\"\r\n    ],\r\n    \"MotionDetectionEnabled\": true,\r\n    \"PersonDetectionEnabled\": true,\r\n    \"UsageType\": \"interior\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/devices/securityCamera"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "SecurityCameraMotionDisabled",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"New camera\",\r\n    \"ModelNumber\": \"N78\",\r\n    \"Description\": \"Great all around camera\",\r\n    \"MainPicture\": \"https://www.security.org/app/uploads/2019/09/Lorex-Camera.png\",\r\n    \"Photographies\": [\r\n        \"https://example2.com/photo1.jpg\",\r\n        \"https://example2.com/photo2.jpg\"\r\n    ],\r\n    \"MotionDetectionEnabled\": false,\r\n    \"PersonDetectionEnabled\": true,\r\n    \"UsageType\": \"interior\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/devices/securityCamera"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "WindowSensor",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer df35442e-be8c-4ac2-8ce5-5bd2d85feda6",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"New Window Sensor\",\r\n    \"ModelNumber\": \"200\",\r\n    \"Description\": \"Window sensor with latest technology\",\r\n    \"Photographies\": [\r\n        \"https://example3.com/photo1.jpg\",\r\n        \"https://example3.com/photo2.jpg\"\r\n    ],\r\n    \"MainPicture\": \"https://images.ctfassets.net/a3peezndovsu/PC5NA8egRrDBPKsUIX6oa/cd3839476ea8c6675d4e3b6b77bc67df/374_Breakpoint_-_Contact_Sensor_lifestyle_Horizontal_2x_1.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://localhost:44375/api/devices/windowSensor"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "AddUserToHome",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ca04e482-ea2a-4335-8458-3645e623e398",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserId\": \"32e9dc8b-c065-4dfe-92b0-22ae346f7428\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://localhost:44375/api/homes/031b8136-2f04-4815-9cf1-177a7c3b8894"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deteccion de movimiento",
+			"item": [
+				{
+					"name": "ExecuteMotionDetectionNotification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "https://localhost:44375/api/devices/{hardwareDeviceId}/motionDetectionNotification"
+					},
+					"response": [
+						{
+							"name": "WithoutMotionDetectionEnabled",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "https://localhost:44375/api/devices/6baca595-96ac-44dc-bf59-6fb9bc144e1b/motionDetectionNotifications"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "WindowSensor",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "https://localhost:44375/api/devices/eea62daa-624a-485b-9579-fd5b316dd7e2/motionDetectionNotifications"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Correct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "https://localhost:44375/api/devices/b533e336-6af0-449e-b025-d3aa4ad4d000/motionDetectionNotifications"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

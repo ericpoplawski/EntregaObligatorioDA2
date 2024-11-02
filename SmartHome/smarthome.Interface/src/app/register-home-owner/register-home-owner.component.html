@@ -1,0 +1,28 @@
+<div class="register-container">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <label for="firstName">First Name</label>
+        <input id="firstName" formControlName="firstName" type="text" />
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" formControlName="lastName" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" />
+
+        <label for="password">Password</label>
+        <input id="password" formControlName="password" type="password" />
+
+        <label for="profilePicture">Profile Picture (URL)</label>
+        <input id="profilePicture" formControlName="profilePicture" type="text" />
+
+        <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+
+    <div *ngIf="successMessage" class="success-message">
+        {{ successMessage }}
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+</div>

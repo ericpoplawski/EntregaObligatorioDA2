@@ -1,0 +1,15 @@
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\bin\Debug\net8.0\smarthome.DataImporter.exe
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\bin\Debug\net8.0\smarthome.DataImporter.deps.json
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\bin\Debug\net8.0\smarthome.DataImporter.runtimeconfig.json
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\bin\Debug\net8.0\smarthome.DataImporter.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\bin\Debug\net8.0\smarthome.DataImporter.pdb
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.AssemblyInfoInputs.cache
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.AssemblyInfo.cs
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.csproj.CoreCompileInputs.cache
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.sourcelink.json
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\refint\smarthome.DataImporter.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.pdb
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\smarthome.DataImporter.genruntimeconfig.cache
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.DataImporter\obj\Debug\net8.0\ref\smarthome.DataImporter.dll

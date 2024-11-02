@@ -1,0 +1,92 @@
+/* Estilos generales para centrar el formulario en la página */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Efecto de foco en los inputs */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilos del botón */
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #b3d7ff;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para mensajes de éxito y error */
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    background-color: #e6f4ea;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    background-color: #f8d7da;
+}
+
+/* Agregar un poco de espaciado en la parte superior de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}

@@ -1,0 +1,15 @@
+<div class="dashboard-container">
+  <nav class="sidebar">
+    <ul>
+      <li><a routerLink="/create-admin">Create Administrator</a></li>
+      <li><a routerLink="/delete-admin">Delete Administrator</a></li>
+      <li><a routerLink="/create-company-owner">Create Company Owner</a></li>
+      <li><a routerLink="/list-users">List Users</a></li>
+      <li><a routerLink="/list-companies">List Companies</a></li>
+    </ul>
+    <button class="switch-role-button" (click)="switchToHomeOwner()">Switch to role HomeOwner</button>
+  </nav>
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tISUEAG4I31MxFrHtBF+bxqz4lb0DmwMgnCoCwkz9Ng=",
+  "Source": "smarthome.WebApi",
+  "BasePath": "_content/smarthome.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

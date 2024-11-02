@@ -1,0 +1,30 @@
+<div class="create-admin-container">
+  <h2>Crear Cuenta de Administrador</h2>
+  <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">Nombre</label>
+      <input id="firstName" formControlName="firstName" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Apellido</label>
+      <input id="lastName" formControlName="lastName" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo Electrónico</label>
+      <input id="email" formControlName="email" type="email" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input id="password" formControlName="password" type="password" />
+    </div>
+
+    <button type="submit" [disabled]="adminForm.invalid">Create Administrator</button>
+  </form>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

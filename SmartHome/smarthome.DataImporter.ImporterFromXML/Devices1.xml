@@ -1,0 +1,73 @@
+<devices>
+    <!-- Security Camera -->
+    <device>
+        <id>69508433-1569-47a4-9591-447c3c4bdcbd</id>
+        <type>camera</type>
+        <name>Business G235</name>
+        <model>G235</model>
+        <photos>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_787853-MLU71131483530_082023-F.webp</path>
+                <isMain>false</isMain>
+            </photo>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_603102-MLU71171145159_082023-F.webp</path>
+                <isMain>true</isMain>
+            </photo>
+        </photos>
+        <personDetection>false</personDetection>
+        <movementDetection>true</movementDetection>
+        <usageType>exterior</usageType>
+    </device>
+
+    <!-- Window Sensor -->
+    <device>
+        <id>cc077ab4-432b-43b9-85d3-d256dcc887fb</id>
+        <type>sensor-open-close</type>
+        <name>Kasa A540</name>
+        <model>A540</model>
+        <photos>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_737708-MLU75995534252_052024-F.webp</path>
+                <isMain>false</isMain>
+            </photo>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_859473-MLU78851895417_082024-F.webp</path>
+                <isMain>true</isMain>
+            </photo>
+        </photos>
+    </device>
+
+    <!-- Motion Sensor -->
+    <device>
+        <id>6f78b79a-2dcb-4414-9d7b-0dc4eb15258d</id>
+        <type>sensor-movement</type>
+        <name>Smart H313</name>
+        <model>H313</model>
+        <photos>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_710567-MLU74978946520_032024-F.webp</path>
+                <isMain>true</isMain>
+            </photo>
+            <photo>
+                <path>https://http2.mlstatic.com/D_NQ_NP_2X_901269-MLU75119028651_032024-F.webp</path>
+                <isMain>false</isMain>
+            </photo>
+        </photos>
+        <movementDetection>true</movementDetection>
+    </device>
+
+    <!-- Smart Lamp -->
+    <device>
+        <id>12345678-1234-1234-1234-123456789012</id>
+        <type>smart-lamp</type>
+        <name>Smart Lamp X100</name>
+        <model>X100</model>
+        <photos>
+            <photo>
+                <path>https://example.com/photo1.webp</path>
+                <isMain>true</isMain>
+            </photo>
+        </photos>
+    </device>
+</devices>

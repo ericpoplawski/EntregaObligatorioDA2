@@ -1,0 +1,13 @@
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\bin\Debug\net8.0\smarthome.Domain.deps.json
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\bin\Debug\net8.0\smarthome.Domain.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\bin\Debug\net8.0\smarthome.Domain.pdb
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.AssemblyInfoInputs.cache
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.AssemblyInfo.cs
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.sourcelink.json
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\refint\smarthome.Domain.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.pdb
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\ref\smarthome.Domain.dll
+C:\Users\ericp\Documents\A6toSemestre\Diseño2\257341-266959-258327\SmartHome\smarthome.Domain\obj\Debug\net8.0\smarthome.Domain.csproj.AssemblyReference.cache

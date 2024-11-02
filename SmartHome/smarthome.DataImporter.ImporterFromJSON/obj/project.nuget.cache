@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pMzgeDVT29aEHYI98r4SBsFLJpv/76UDrWQ6H8gLz1qkMPF/40PptbgXAEvXqqevo4Y5NAjOP3+P8xI3j8CHyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ericp\\Documents\\A6toSemestre\\Diseño2\\257341-266959-258327\\SmartHome\\smarthome.DataImporter.ImporterFromJSON\\smarthome.DataImporter.ImporterFromJSON.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ericp\\.nuget\\packages\\cq.utility\\1.1.16\\cq.utility.1.1.16.nupkg.sha512",
+    "C:\\Users\\ericp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ericp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
